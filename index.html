@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="logo">
+                <div class="img-container">
+                    <img src="assets/logo@2x.png" alt="">
+                </div>
+                <div class="links">
+                    <a class="text-white" href="#">Weather</a>
+                    <a href="#">tagline goes here</a>
+                </div>
+            </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" >Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" >Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<section class="main container-fluid">
+    <div class="container">
+        <form class="input">
+            <input class="w-100 rounded-5 p-3 border-0" type="text" placeholder="Find your location ...">
+            <button class="submitBtn">Find</button>
+        </form>
+    </div>
+</section>
+<section class="forecast-sec">
+    <div class="container">
+            <div class="row forecast-table">
+                <div class="col-md-4">
+                    <div class="todayForecast">
+                        <div class="forHeader d-flex justify-content-between">
+                            <span>Monday</span>
+                            <span>24June</span>
+                        </div>
+                        <div class="forContent"></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="forecast"></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="forecast"></div>
+                </div>
+            </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <form class="input">
+                    <input type="text" placeholder="Enter your email to subscribe...">
+                    <button class="submitBtn">Subscribe</button>
+                </form>    
+            </div>
+            <div class="col-md-3 col-md-offset-1">
+                <div class="social-links">
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<script src="https://kit.fontawesome.com/cb076d1c16.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
