@@ -106,18 +106,127 @@ flex-direction: column;
 .main .submitBtn {
   position: absolute;
   top: 73px;
-  right: 125px;
+  right: 115px;
   padding: 12px 40px;
   border: none;
   background: #009ad8;
   border-radius: 30px;
   color: white;
 }
-.forecast-table{
-    background: #323544;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
+.row > * {
+  padding: 0;
+}
+.forecast-sec {
+  height: 45vh;
+}
+.forecast-table {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  color: white;
+  position: relative;
+  top: -170px;
+}
+.forHeader {
+  width: 100%;
+  background-color: #323544;
+  padding: 10px;
+}
+.forContent {
+  background: rgba(50, 53, 68, 0.5);
+  padding: 60px 20px;
+  h1 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: rgb(191, 193, 200);
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 80px;
+  }
+  .more-details {
+    justify-content: space-evenly;
+    img {
+      margin-right: 10px;
+    }
+  }
+}
+.forContent :nth-child(4) {
+  font-size: 14px;
+  font-weight: 300;
+  color: #009ad8;
+}
+.forecast {
+  height: 100%;
+  text-align: center;
+}
+.forecast .forHeader {
+  background-color: #262936;
+}
+.forecast .forContent {
+  padding: 56px 20px;
+  h1 {
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+  h2 {
+    font-weight: 300;
+    font-size: 20px;
+    color: #bfc1c8;
+  }
+}
+.forecast.lastDay .forContent {
+  background-color: rgb(50, 53, 68, 0.4);
+}
+.forecast.lastDay .forHeader {
+  background-color: #323544;
+}
+footer {
+  background-color: #262936;
+  position: relative;
+  height: 32vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer input {
+  background: #1e202b;
+  color: white;
+  width: 90%;
+  margin-left: 20px;
+}
+footer .submitBtn {
+  position: absolute;
+  top: 67px;
+  right: 612px;
+  padding: 11px 40px;
+  border: none;
+  background: #009ad8;
+  border-radius: 30px;
+  color: white;
+}
+footer .social-links .icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  color: #009ad8;
+  font-size: 20px;
+  font-weight: 400;
+}
+footer .social-links .icon:hover {
+  background-color: #009ad8 !important;
+  color: white !important;
+}
+footer p {
+  color: white;
+  margin: 20px 0 0 10px;
 }
