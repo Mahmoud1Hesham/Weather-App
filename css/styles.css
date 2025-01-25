@@ -8,9 +8,27 @@ body {
   --bs-navbar-color: white;
   padding: 50px 0;
 }
+
 .navbar .container {
   padding-inline: 20px;
 }
+
+.container form {
+  position: relative;
+}
+
+.container form .topbttn {
+  position: absolute;
+  top: 6%;
+  right: .5%;
+  padding: 12px 40px;
+  border: none;
+  background: #009ad8;
+  border-radius: 30px;
+  color: white;
+}
+
+
 /* .logo {
     display: flex;
 flex-direction: column;
@@ -40,6 +58,7 @@ flex-direction: column;
   display: flex;
   align-items: center;
 }
+
 .logo img {
   width: 64px;
   height: auto;
@@ -49,10 +68,12 @@ flex-direction: column;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
   :nth-child(1) {
     font-size: 16px;
     font-weight: 700;
   }
+
   :nth-child(2) {
     font-size: 10px;
     font-weight: 300;
@@ -62,18 +83,22 @@ flex-direction: column;
 }
 
 .logo a {
-  margin-left: 10px; /* Adds some spacing between the links */
+  margin-left: 10px;
+  /* Adds some spacing between the links */
 }
 
 .logo a {
   text-decoration: none;
 }
+
 .navbar-collapse {
   flex-grow: 0;
 }
+
 .navbar-expand-lg .navbar-nav .nav-link {
   padding: 5px 25px;
 }
+
 .nav-link {
   /* min-width: 90px; */
   font-size: 14px;
@@ -84,14 +109,17 @@ flex-direction: column;
   border: 2px solid transparent;
   transition: all 0.5s;
 }
+
 .nav-item {
   margin-right: 12px;
 }
+
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
   color: #009ad8;
   border-color: #009ad8;
 }
+
 .main {
   background-image: url(../assets/banner.png);
   background-size: cover;
@@ -99,10 +127,12 @@ flex-direction: column;
   min-height: 350px;
   position: relative;
 }
+
 .main input {
   background: #1e202b;
   color: white;
 }
+
 .main .submitBtn {
   position: absolute;
   top: 73px;
@@ -113,12 +143,15 @@ flex-direction: column;
   border-radius: 30px;
   color: white;
 }
-.row > * {
+
+.row>* {
   padding: 0;
 }
+
 .forecast-sec {
   height: 45vh;
 }
+
 .forecast-table {
   flex-wrap: wrap;
   justify-content: space-between;
@@ -129,63 +162,78 @@ flex-direction: column;
   position: relative;
   top: -170px;
 }
+
 .forHeader {
   width: 100%;
   background-color: #323544;
   padding: 10px;
 }
+
 .forContent {
   background: rgba(50, 53, 68, 0.5);
   padding: 60px 20px;
+
   h1 {
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
     color: rgb(191, 193, 200);
   }
+
   h2 {
     font-weight: 700;
     font-size: 90px;
     line-height: 80px;
   }
+
   .more-details {
     justify-content: space-evenly;
+
     img {
       margin-right: 10px;
     }
   }
 }
+
 .forContent :nth-child(4) {
   font-size: 14px;
   font-weight: 300;
   color: #009ad8;
 }
+
 .forecast {
   height: 100%;
   text-align: center;
 }
+
 .forecast .forHeader {
   background-color: #262936;
 }
+
 .forecast .forContent {
   padding: 56px 20px;
+
   h1 {
     font-size: 33px;
     font-weight: 700;
     line-height: 36px;
   }
+
   h2 {
     font-weight: 300;
     font-size: 20px;
     color: #bfc1c8;
   }
 }
+
 .forecast.lastDay .forContent {
   background-color: rgb(50, 53, 68, 0.4);
 }
+
 .forecast.lastDay .forHeader {
   background-color: #323544;
 }
+
 footer {
   background-color: #262936;
   position: relative;
@@ -194,22 +242,29 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
+footer form {
+  position: relative;
+}
+
 footer input {
   background: #1e202b;
   color: white;
   width: 90%;
   margin-left: 20px;
 }
+
 footer .submitBtn {
   position: absolute;
-  top: 67px;
-  right: 612px;
+  top: 7.3%;
+  right: 8.2%;
   padding: 11px 40px;
   border: none;
   background: #009ad8;
   border-radius: 30px;
   color: white;
 }
+
 footer .social-links .icon {
   width: 40px;
   height: 40px;
@@ -222,10 +277,12 @@ footer .social-links .icon {
   font-size: 20px;
   font-weight: 400;
 }
+
 footer .social-links .icon:hover {
   background-color: #009ad8 !important;
   color: white !important;
 }
+
 footer p {
   color: white;
   margin: 20px 0 0 10px;
